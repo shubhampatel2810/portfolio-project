@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>shubham- Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-color: rgb(21, 29, 43);
+            color: white;
+            font-family: 'Popins', sans-serif
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(26, 33, 97);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            /* font-size: large; */
+        }
+
+        nav ul li a:hover {
+            color: darkviolet;
+            font-weight: 600;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            /* margin: 40px 84px; */
+            margin: 53px 60px;
+        }
+
+        .left {
+            font-size: 1.6rem;
+        }
+
+        .leftsection .btn {
+            background-color: initial;
+            border: 2px solid white;
+            border-radius: 15px;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .leftsection .btn:hover {
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 15px;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .leftsection .button {
+            padding: 20px;
+        }
+
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0px;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            width: 34px;
+            font-size: 2.5rem;
+            /* margin: 100px 0px; */
+
+        }
+
+        .rightsection img {
+
+            width: 100%;
+            margin: 6px 0px 20px -50px;
+            height: 400px;
+        }
+
+        .purple {
+            color: rgb(109 123 255);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(109 123 255);
+
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .sectionsection .box {
+            background-color: white;
+            width: 100vw;
+            height: 2px;
+            margin: 56px 0px;
+        }
+
+        .box {
+            display: flex;
+            /* margin-top: -40px; */
+            /* background-color: white; */
+            justify-content: space-around;
+            margin-top: -53px;
+
+        }
+
+
+        .secondsection hr {
+            width: 80vw;
+            margin-left: 0px;
+            right: 10px;
+            margin-top: 80px;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 2px;
+            margin: 0px 100px;
+            background-color: cornflowerblue;
+        }
+
+        .secondsection .secondsection-text {
+            text-align: center;
+        }
+
+        .image-top {
+            width: 38px;
+            position: relative;
+            top: -50px;
+            left: -17px;
+            display: inline;
+            height: 40px;
+            width: 40px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 65px;
+            right: 45px;
+            width: 150px;
+        }
+
+
+
+
+        .vertical-desc {
+            position: relative;
+            top: 90px;
+            color: grey;
+            width: 150px;
+            font-size: 12px;
+            right: 50px;
+        }
+
+        .desc-2 {
+            bottom: 2px;
+        }
+
+
+        footer {
+            background-color: black;
+            color: blueviolet;
+            /* height: 233px; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 200px;
+            top: 50px;
+        }
+
+        footer .text-right {
+            text-align: center;
+            color: gray;
+            padding: 12px 0px;
+            font-size: larger;
+        }
+
+
+        .icon-style {
+            margin: 8px 15px;
+            font-weight: 400;
+            cursor: pointer;
+            color: blueviolet;
+            bottom: 10px;
+        }
+        .icon-style:hover {
+           font-weight: 700;
+        }
+
+
+        .icon-gmail {
+            display: inline;
+        margin-top: 10px;
+    }
+    #footer-2 ul li a{ 
+        color: blueviolet;
+    }
+    #footer-2 ul li a:hover{ 
+        font-weight: 700;
+    }
+    
+    #footer-2 ul li{
+        margin: 10px;
+    }
+    
+    .footer-third ul li{
+        text-decoration: underline;
+    }
+    .footer-third ul li:hover{
+            font-weight: 700;
+    }
+
+    
+   
+         
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shubham's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+    <!-- ------------------------------- this will start main content of the website -->
+    <main>
+        <section class="firstsection">
+            <div class="leftsection"> Hi My Name is <span class="purple">Shubham,</span>
+                <div>and I am a Passionate</div>
+
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download</button>
+                    <button class="btn">Visit Github</button>
+
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="developer.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <div class="secondsection-text"> <span class="text-gray"> What I Have done so far </span>
+                <h1>Work Experience</h1>
+            </div>
+            <hr>
+            <div class="box">
+
+
+                <div class="vertical">
+                    <img class="image-top" src="st.png">
+
+                    <div class="vertical-title "> Software Testing </div>
+                    <div class="vertical-desc ">"My passion for software testing has led me to become a meticulous
+                        investigator, unearthing even the most elusive bugs and glitches to ensure a seamless user
+                        experience.""Quality is not an act; it is a habit. Software testing is the habit that guarantees
+                        excellence."
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="icon.png">
+                    <div class="vertical-title"> .Net Developer </div>
+                    <div class="vertical-desc">"With a passion for continuous learning, I stay updated with the latest
+                        advancements in the .NET world, enabling me to leverage new tools and technologies for enhanced
+                        development experiences and outcomes.</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="Flutter.png">
+                    <div class="vertical-title "> App Developer </div>
+                    <div class="vertical-desc ">"Through my work experience in Flutter development, I have demonstrated
+                        my ability to create high-quality, performant, and scalable mobile apps for both iOS and Android
+                        platforms."
+                    </div>
+                </div>
+
+                <div class="vertical ">
+                    <img class="image-top" src="python.png">
+
+                    <div class="vertical-title"> Python Developer </div>
+                    <div class="vertical-desc">"Through collaborative teamwork, I have effectively communicated with
+                        stakeholders and cross-functional teams, delivering successful Python projects that align with
+                        business objectives."
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="mongodb.png">
+                    <div class="vertical-title"> Mongo Db Dev </div>
+                    <div class="vertical-desc">"As a MongoDB developer, I have successfully managed complex data
+                        structures and optimized query performance, harnessing the power of NoSQL database technology."
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js.png">
+                    <div class="vertical-title"> Javascript Developer </div>
+                    <div class="vertical-desc">
+                        "With hands-on experience in JavaScript, I have built dynamic and interactive web applications
+                        that have enhanced user experiences and achieved business objectives."
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div> -->
+
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Shubham's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second  " id="footer-2">
+                <ul>
+                    <li><a href="/" class="footer-second-style">Home</a></li>
+                    <li><a href="/" class="footer-second-style">About</a></li>
+                    <li><a href="/" class="footer-second-style">Services</a></li>
+                    <li><a href="/" class="footer-second-style">Projects</a></li>
+                    <li><a href="/" class="footer-second-style">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-third " id="footer-2">
+                <ul>
+                    <li>Project</li>
+                    <li>Mission</li>
+                    <li>FQA</li>
+                    <li>Terms and Condition</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+
+            <div class="footer-four footer-icon">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100030017377986" class="icon-style"><i
+                                class="fab fa-facebook icon-style"></i>FaceBook</a></li>
+                    <li> <a href="https://www.instagram.com/shubhampatel6267?igshid=ZDc4DBmNNQ==" class="icon-style"><i
+                                class="fab fa-instagram icon-style"></i>Instagram</a></li>
+                    <li> <a href="https://www.linkdin.com/in/shubham-patel-7091a0223" class="icon-style"><i
+                                class="fab fa-linkedin icon-style" class="icon-style"></i>Linkdin</a></li>
+                    <li> <a href="#" class="icon-style"><i class="fab fa-github icon-style"></i>Github</a></li>
+                    <li><a href="#" class="icon-style icon-gmail"><i
+                                class="fa-sharp fa-solid fa-envelope icon-style icon-gmail"></i>shubhpatel2810@gmail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-right">
+            copyright &#169; <a href="www.Shubhamportfolio.com">www.Shubhamportfolio.com</a> | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'App developer', ' .Net Developer', ' Full Stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
